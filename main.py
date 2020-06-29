@@ -1,5 +1,6 @@
 import cmd
 import json
+import sys
 from typing import List
 from typing import Union
 
@@ -155,7 +156,7 @@ class Shell(cmd.Cmd):
       print("Need Product")
       return
     p = str.strip(arg)
-    if p not in list_all_products():
+    if p not in list_all_products(products):
       print("Product not found")
       print("Similar Products: ")
       self.do_search_products(arg)
@@ -175,6 +176,10 @@ class Shell(cmd.Cmd):
   #     return list_all_products()
   #   else:
   #     return search_products(list_all_products(), text)
+
+  def do_exit(self, arg):
+    "Exit the prompt"
+    sys.exit(0)
 
 
 if __name__ == '__main__':
