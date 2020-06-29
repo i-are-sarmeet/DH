@@ -61,7 +61,7 @@ def search_ingredients(list_ingredients: List[str], ingredient: str) -> List[str
   return list(filter(lambda x: ingredient.lower() in x.lower(), list_ingredients))
 
 
-def search_products(list_products: List[str], product: str):
+def search_products(list_products: List[str], product: str) -> List[str]:
   """
   Search product with partial name
   TODO: Maybe use fuzzywuzzy for approximation and spelling mistakes
@@ -72,7 +72,7 @@ def search_products(list_products: List[str], product: str):
   return list(filter(lambda x: product.lower() in x.lower(), list_products))
 
 
-def search_product_with_ingredients(ingredients: dict, products: dict, ing: Union[str, List[str]]):
+def search_product_with_ingredients(ingredients: dict, products: dict, ing: Union[str, List[str]]) -> List[str]:
   """
   search products with provided ingredients
   :param products: dictionary of products
