@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Acai + Cherry",
+      "collection": "smoothie",
+      "ingredient_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chocolate + Blueberry",
+      "collection": "smoothie",
+      "ingredient_ids": [
+        3,
+        4,
+        26,
+        5,
+        12
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Beet + Avocado Poke",
+      "collection": "harvest bowl",
+      "ingredient_ids": [
+        10,
+        16,
+        7,
+        17
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cinnamon + Banana",
+      "collection": "oat bowl",
+      "ingredient_ids": [
+        19,
+        3,
+        22,
+        26,
+        21,
+        20
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mushroom + Miso",
+      "collection": "soup",
+      "ingredient_ids": [
+        22,
+        23,
+        7,
+        24,
+        25,
+        12
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Ginger + Greens",
+      "collection": "smoothie",
+      "ingredient_ids": [
+        10,
+        7,
+        3,
+        11,
+        12
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "ingredients": [
+    {
+      "id": 1,
+      "name": "Organic Acai Berry",
+      "is_allergen": false
+    },
+    {
+      "id": 2,
+      "name": "Organic Cherry",
+      "is_allergen": false
+    },
+    {
+      "id": 3,
+      "name": "Organic Banana",
+      "is_allergen": false
+    },
+    {
+      "id": 4,
+      "name": "Organic Blueberry",
+      "is_allergen": false
+    },
+    {
+      "id": 5,
+      "name": "Organic Kale",
+      "is_allergen": false
+    },
+    {
+      "id": 6,
+      "name": "Hazelnuts",
+      "is_allergen": false
+    },
+    {
+      "id": 7,
+      "name": "Ginger",
+      "is_allergen": false
+    },
+    {
+      "id": 8,
+      "name": "Apples",
+      "is_allergen": false
+    },
+    {
+      "id": 9,
+      "name": "Organic Raspberry",
+      "is_allergen": false
+    },
+    {
+      "id": 10,
+      "name": "Avocado",
+      "is_allergen": false
+    },
+    {
+      "id": 11,
+      "name": "Organic Flax Seeds",
+      "is_allergen": false
+    },
+    {
+      "id": 12,
+      "name": "Organic Spinach",
+      "is_allergen": false
+    },
+    {
+      "id": 13,
+      "name": "Lemon",
+      "is_allergen": false
+    },
+    {
+      "id": 14,
+      "name": "Celery",
+      "is_allergen": false
+    },
+    {
+      "id": 15,
+      "name": "Cucumber",
+      "is_allergen": false
+    },
+    {
+      "id": 16,
+      "name": "Beets",
+      "is_allergen": false
+    },
+    {
+      "id": 17,
+      "name": "Macadamia Nut",
+      "is_allergen": true
+    },
+    {
+      "id": 18,
+      "name": "Celery",
+      "is_allergen": false
+    },
+    {
+      "id": 19,
+      "name": "Cinnamon",
+      "is_allergen": false
+    },
+    {
+      "id": 20,
+      "name": "Oats",
+      "is_allergen": false
+    },
+    {
+      "id": 21,
+      "name": "Maple",
+      "is_allergen": false
+    },
+    {
+      "id": 22,
+      "name": "Organic Butternut Squash",
+      "is_allergen": false
+    },
+    {
+      "id": 23,
+      "name": "Mushrooms",
+      "is_allergen": false
+    },
+    {
+      "id": 24,
+      "name": "Seaweed",
+      "is_allergen": false
+    },
+    {
+      "id": 25,
+      "name": "Miso",
+      "is_allergen": false
+    },
+    {
+      "id": 26,
+      "name": "Cacao",
+      "is_allergen": false
+    }
+  ]
+}
