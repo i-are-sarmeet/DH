@@ -35,14 +35,14 @@ def load_files():
 ingredients, products, allergen, collection = load_files()
 
 
-def list_all_ingredients() -> List[str]:
+def list_all_ingredients(ingredients: dict) -> List[str]:
   """
   :return: List of all available ingredients
   """
   return list(ingredients.keys())
 
 
-def list_all_products() -> List[str]:
+def list_all_products(products: dict) -> List[str]:
   """
   :return: List of all available products
   """
@@ -74,6 +74,8 @@ def search_products(list_products: List[str], product: str):
 def search_product_with_ingredients(ingredients: dict, products: dict, ing: Union[str, List[str]]):
   """
   search products with provided ingredients
+  :param products: dictionary of products
+  :param ingredients: Dictionary of ingredients
   :param ing: ingredients to search, can be list or string
   :return: List of products with ingredients
   """
@@ -93,14 +95,14 @@ class Shell(cmd.Cmd):
 
   def do_ingredients(self, arg):
     "List all Ingredients"
-    ing = list_all_ingredients()
+    ing = list_all_ingredients(ingredients)
     table = [ing[i:i + 5] for i in range(0, len(ing), 5)]
     print("Available Ingredients")
     print(tabulate(table, tablefmt="fancy_grid"))
 
   def do_products(self, arg):
     "List all products."
-    prod = list_all_products()
+    prod = list_all_products(products)
     table = [prod[i:i + 5] for i in range(0, len(prod), 5)]
     print("Available Products")
     print(tabulate(table, tablefmt="fancy_grid"))
@@ -110,7 +112,7 @@ class Shell(cmd.Cmd):
     if not arg:
       print("Need some hints")
       return
-    ing = search_ingredients(list_all_ingredients(), arg)
+    ing = search_ingredients(list_all_ingredients(ingredients), arg)
     table = [ing[i:i + 5] for i in range(0, len(ing), 5)]
     print("Available Ingredients")
     print(tabulate(table, tablefmt="fancy_grid"))
@@ -120,7 +122,7 @@ class Shell(cmd.Cmd):
     if not arg:
       print("Need some hints")
       return
-    prod = search_products(list_all_products(), arg)
+    prod = search_products(list_all_products(products), arg)
     table = [prod[i:i + 5] for i in range(0, len(prod), 5)]
     print("Available Products")
     print(tabulate(table, tablefmt="fancy_grid"))
@@ -149,6 +151,7 @@ class Shell(cmd.Cmd):
   def do_show_product_ingredients(self, arg):
     "Get all ingredients of products\nUsage: `show_product_ingredients Acai + Cherry`"
     if not arg:
+      # no product arguments provided
       print("Need Product")
       return
     p = str.strip(arg)
